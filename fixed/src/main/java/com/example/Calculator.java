@@ -10,6 +10,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 public class Calculator {
+    /**
+     * This is the main method which calculates the Euler number using the Executor with a fixed number of threads.
+     */
     public static void main(String[] args) {
 
         System.out.println("Calculating Euler...");
