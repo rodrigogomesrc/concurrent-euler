@@ -1,5 +1,6 @@
 package com.example;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -24,16 +25,16 @@ public class Calculator {
 
         ExecutorService executor = Executors.newFixedThreadPool(threads);
 
-        List<Future<Double>> termsList = new ArrayList<>();
-        double finalResult = 1;
+        List<Future<BigDecimal>> termsList = new ArrayList<>();
+        BigDecimal finalResult = BigDecimal.ONE;
 
         for (int i = 1; i <= terms; i++) {
             termsList.add(executor.submit(new EulerTermCalculator(i)));
         }
 
         try {
-            for (Future<Double> term : termsList) {
-                finalResult += term.get();
+            for (Future<BigDecimal> term : termsList) {
+                finalResult = finalResult.add(term.get());
             }
         } catch (ExecutionException | InterruptedException e) {
             e.printStackTrace();
