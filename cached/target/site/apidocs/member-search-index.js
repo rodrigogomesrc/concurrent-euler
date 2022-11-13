@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.example","c":"Calculator","l":"Calculator()","url":"%3Cinit%3E()"},{"p":"com.example","c":"EulerTermCalculator","l":"call()"},{"p":"com.example","c":"EulerTermCalculator","l":"EulerTermCalculator(int)","url":"%3Cinit%3E(int)"},{"p":"com.example","c":"Calculator","l":"main(String[])","url":"main(java.lang.String[])"}]
