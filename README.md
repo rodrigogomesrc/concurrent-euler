@@ -3,15 +3,15 @@ Projeto para disciplina de Programação Concorrente - DIMAP
 
 ## Sobre
 
-Este projeto faz o cálculo no múemro de euler (e) utilizando três variações de Thread Pool providos pelo framework 
-Executor do Java Concurrency Utilities.
+Este projeto faz o cálculo no número de euler (e) utilizando três variações de Thread Pool 
+providos pelo framework Executor do Java Concurrency Utilities.
 
 ## Estrutura 
 
 ```
-+─concurrent-euler                   
-  ├─── docs                    
++─concurrent-euler                                     
   └─── fixed 
+         ├── docs
          └──src
             └──main  
                 └──java
@@ -19,7 +19,8 @@ Executor do Java Concurrency Utilities.
                       └──example
                          └─── Calculator.java          
                          └─── EulerTermCalculator.java
-  ├── cached                      
+  ├── cached
+       ├── docs                      
        └──src
             └──main  
                 └──java
@@ -27,7 +28,8 @@ Executor do Java Concurrency Utilities.
                       └──example
                          └─── Calculator.java          
                          └─── EulerTermCalculator.java
-  ├── work-stealing                     
+  ├── work-stealing   
+       ├── docs                  
        └──src
             └──main  
                 └──java
