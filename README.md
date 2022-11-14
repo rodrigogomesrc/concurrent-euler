@@ -3,7 +3,8 @@ Projeto para disciplina de Programação Concorrente - DIMAP
 
 ## Sobre
 
-Este projeto faz o cálculo no múemro de euler (e) utilizando três variações de Thread Pool providos pelo framework Executor do Java Concurrency Utilities.
+Este projeto faz o cálculo no múemro de euler (e) utilizando três variações de Thread Pool providos pelo framework 
+Executor do Java Concurrency Utilities.
 
 ## Estrutura 
 
@@ -38,4 +39,6 @@ Este projeto faz o cálculo no múemro de euler (e) utilizando três variações
 ```
 ## Executar 
 
-Para executar o programa, faça o clone do projeto e importe a aplicação como um projeto Java Maven em sua IDE. Faça o build e execute o arquivo Calculator.java referente a versão de Thread Pool que deseja testar (Fixed, cached ou Work Stealing Thread Pool) em seu respectivo diretório. 
+Para executar o programa, faça o clone do projeto e importe a aplicação como um projeto Java Maven em sua IDE. 
+Faça o build e execute o arquivo Calculator.java referente a versão de Thread Pool que deseja testar 
+(Fixed, cached ou Work Stealing Thread Pool) em seu respectivo diretório. 

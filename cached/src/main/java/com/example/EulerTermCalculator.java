@@ -29,7 +29,7 @@ public class EulerTermCalculator implements Callable<BigDecimal> {
      */
     @Override
     public BigDecimal call() {
-        System.out.println("Número de Threads executando: " + Thread.activeCount());
+        System.out.println("Number of threads executing: "  + Thread.activeCount());
         return BigDecimal.ONE.divide(factorial(n), 100, RoundingMode.HALF_UP);
     }
 

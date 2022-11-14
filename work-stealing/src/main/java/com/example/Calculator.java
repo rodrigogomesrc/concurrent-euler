@@ -24,13 +24,10 @@ public class Calculator {
         System.out.println("calculating for " + terms + " terms");
 
         ExecutorService executor = Executors.newWorkStealingPool();
-   
-         
 
         List<Future<BigDecimal>> termsList = new ArrayList<>();
         BigDecimal finalResult = BigDecimal.ONE;
-        
-        
+
         for (int i = 1; i <= terms; i++) {
             termsList.add(executor.submit(new EulerTermCalculator(i)));
         }
