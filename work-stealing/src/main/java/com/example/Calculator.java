@@ -9,10 +9,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+/**
+ * This is the Calculator class which implements the main method that calculates the Euler number using the Executor with work stealing pool.
+ */
 public class Calculator {
-    /**
-     * This is the main method which calculates the Euler number using the Executor with cached.
-     */
     public static void main(String[] args) {
 
         System.out.println("Calculating Euler...");
